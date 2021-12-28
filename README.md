@@ -1,23 +1,13 @@
-# Lab05 Guide
-## Getting Started
-[Lab Introduction Video](https://youtu.be/4m5AwuwMg6E)  
+# Module 5 Lab Guide (part 2)
 
-- Please clone the [Mod05 Code Examples](https://github.com/lhindman/cs121-mod05-examples.git).
-- Please watch the [M.A.S.H. and Gradebook Activity Overview Videos](https://www.youtube.com/playlist?list=PLbxWwkW_BhyBcxkgU0tQpIh_YdCUVFC52).  
-
-
-### Code Style Requirements
-Please review the [CS121 Style Guide](https://docs.google.com/document/d/1LWbGQBKkApnNAzzgwOSvRM03DmhYWx5yEfecT2WXfjI/edit?usp=sharing) and apply it in all lab activities and projects this semester. Coding Style will assessed as part of your lab and project grades.
-
-### Code Quality Requirements
-- Code must compile without warnings using openjdk11
-- Code must run without errors or warnings on safe-path and edge test cases
-- More to come as we learn about input validation and exception handling
-
-## Activity 1 - CoinFlip
+## Lab Activity 2 - HousingCrunch (Required)
 ### Problem Description
+For this lab activity, the HousingCrunch activity in part 1 will be modified to load housing data from a CSV file instead of having the options manually added to the houseList (also known has hard-coded). In addition to prompting the user for name and a seed value, the program should also prompt for the filename containing the housing data. The data file will contain more data fields than will be used in this application as we are only interested in the housing data stored in the 1st field. The screenshot below shows a spreadsheet view of the provided CSV data with the first field of each row outlined in red.
 
-Write a program that simulates flipping a coin to make decisions. The input is how many decisions are needed, and the output is either heads or tails. Assume the input is a value greater than 0.
+
+***It will be extremely helpful to review the CSVParser Deeper Look Video and Guided Experimentation examples before starting on this activity.***
+
+NOTE:  In Computer Science we teach students to begin counting at zero because zero is the first index value of arrays, strings and many other programming related things.  When working with data from muggles (non-programmer folk), the first data element is often referred to as *record 1* or *row 1* or *column A* or *field 1*. Just open a spreadsheet and look at the column and row identifiers.  As programmers it is our responsibility to be aware of this difference and make certain our programbs behave accordingly.
 
 Ex: If the input is:
 ```
