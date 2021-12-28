@@ -2,7 +2,7 @@
 
 ## Lab Activity 2 - HousingCrunch (Required)
 ### Problem Description
-For this lab activity, the HousingCrunch activity in part 1 will be modified to load housing data from a CSV file instead of having the options manually added to the houseList (also known has hard-coded). In addition to prompting the user for name and a seed value, the program should also prompt for the filename containing the housing data. The data file will contain more data fields than will be used in this application as we are only interested in the housing data stored in the 1st field. The screenshot below shows a spreadsheet view of the provided CSV data with the first field of each row outlined in red.
+For this lab activity, the HousingCrunch activity in part 1 will be modified to load housing data from a CSV file instead of having the options manually added to the houseList (also known has hardcoded values). In addition to prompting the user for name and a seed value, the program should also prompt for the filename containing the housing data. The data file will contain more data fields than will be used in this application as we are only interested in the housing data stored in the 1st field. The screenshot below shows a spreadsheet view of the provided CSV data with the first field of each row outlined in red.
 
 <img src="images/MASHDatabase.png" alt="MASH Database Spreadsheet" width="653">
 
