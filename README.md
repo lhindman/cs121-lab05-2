@@ -10,41 +10,47 @@ For this lab activity, the HousingCrunch activity in part 1 will be modified to 
 
 NOTE:  In Computer Science we teach students to begin counting at zero because zero is the first index value of arrays, strings and many other programming related things.  When working with data from muggles (non-programmer folk), the first data element is often referred to as *record 1* or *row 1* or *column A* or *field 1*. Just open a spreadsheet and look at the column and row identifiers.  As programmers it is our responsibility to be aware of this difference and make certain our programbs behave accordingly.
 
-Ex: If the input is:
+#### Expected Program Output (with sample user input)
 ```
-3
+Please enter your name: Luke
+Please enter a seed value: 123
+Please enter the filename: MASHDatabase.csv
+
+Hello Luke,
+You should buy a XXXXXXXXX
 ```
-the output is:
+
+#### Expected Program Output (with sample user input)
+```
+Please enter your name: Luke
+Please enter a seed value: 9853482
+Please enter the filename: MASHDatabase.csv
+
+Hello Luke,
+You should buy a XXXXXXXXX
+```
+
+### Program Design
+Please copy LabUtility.java and HousingCrunch.java from the HousingCrunch activing in part 1 into the HousingCrunch folder.  This will allow reuse of both the getName() and getSeed() static methods and add a two additional static methods to our LabUtility class. Use the javadoc comments below to implement the expected functionality of each static method.
 
 ```
-tails
-heads
-tails
+public static String getFilename(Scanner kbd) {...}
+``` 
+
 ```
-For reproducibility needed for auto-grading, seed the program with a value of 2. In a real program, you would seed with the current time. In that case, every program's output would be different, which is what is desired but can't be auto-graded. 
-
-Note: A common student mistake is to create an instance of Random before each call to rand.nextInt(). But seeding should only be done once, at the start of the program, after which rand.nextInt() can be called any number of times. 
-
-The program must implement a method named *headsOrTails* that will perform the random selection. The javadoc comment below provides details on the expected behavior of this method as well as the required header (signature) of the *headsOrTails* method.
+public static ArrayList<String> buildListFromCSV(String filename, int fieldNumber) {...}
 ```
-/**
- * Randomly pick 0 or 1 using the specified Random object and use them to 
- *    represent "heads" or "tails" respectively. Assume the value 0 represents
- *    "heads" and the value 1 represents "tails."  Return a String that 
- *    contains the randomly selected word.
- *
- * @param rand Reference to Random object to use for calls to nextInt()
- * @return String containing the randomly selected "heads" or "tails"
- */
 
- public static String headsOrTails(Random rand)
- ``` 
-
+Once the above static methods have been successfully implemented, they can easily be integrated into HousingCrunch.java by first removing removing the hard-coded homeList and replacing it with the following method calls. Note that the number "1" in the call to buildListFromCSV() indicates that the list should be built from the first field in the CSV file.
+```
+String filename = LabUtility.getFilename(kbd);
+ArrayList<String> homeList = LabUtility.buildListFromCSV(filename,1);
+```
 
 ### Implementation Guide
-1. Expand the folder named A1-CoinFlip and create a new file named CoinFlip.java
-2. Design a program to satisfy the requirements in the Problem Description and enter the program code in CoinFlip.java
-3. Test the program using the run link above the main method. Carefully think about each of the different cases you'll need to test for to verify that the application is functioning properly.
+1. Expand the folder named HousingCrunch, copy LabUtility.java and HousingCrunch.java from part 1 into this folder
+2. Implement the static methods in LabUtility.java then update HousingCrunch.java as shown above to call these static methods
+3. Test the program using the sample user input and compare against the expected output.
 4. Commit the changes to your local repository with a message stating that Activity 1 is completed.
 5. Push the changes from your local repository to the github classroom repository.
 
