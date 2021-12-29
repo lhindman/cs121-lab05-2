@@ -96,7 +96,7 @@ ArrayList<String> transportationList = LabUtility.buildListFromCSV(filename,5);
 ArrayList<String> hometownList = LabUtility.buildListFromCSV(filename,6);
 ```
 
-Once the lists have been created and populated with data, use the technique demonstrated in the MagicEightBall example to make random selections from each list and sort the result to variables. Finally, use print statements and string concatenation to create the user's future.
+Once the lists have been created and populated with data, use the technique demonstrated in the MagicEightBall example to make random selections from each list and store the result to a variable. Finally, use print statements and string concatenation to create the user's future.
 
 
 ### Implementation Guide
