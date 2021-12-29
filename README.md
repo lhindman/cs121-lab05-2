@@ -51,11 +51,55 @@ ArrayList<String> homeList = LabUtility.buildListFromCSV(filename,1);
 1. Expand the folder named HousingCrunch, copy LabUtility.java and HousingCrunch.java from part 1 into this folder
 2. Implement the static methods in LabUtility.java then update HousingCrunch.java as shown above to call these static methods
 3. Test the program using the sample user input and compare against the expected output.
-4. Commit the changes to your local repository with a message stating that Activity 1 is completed.
+4. Commit the changes to your local repository with a message stating that Lab Activity 2 is completed.
 5. Push the changes from your local repository to the github classroom repository.
 
-## Activity 2 - CoinFlip (revisited)
+## Lab Activity 3 - MASHGame (Required)
 ### Problem Description
+
+M.A.S.H. is a text-based game that will predict your future!  M.A.S.H. is an abbreviation for potential future places of residence: Mansion, Apartment, Shack, House. :)
+
+Write a program that prompts the user for their name and the filename contain a CSV formatted database. The database is formatted as shown in the image below with field 1 cooresponding to the homeList, field 2 cooresponding to the femaleSpouseList and so on... with each column of data will be stored in a list. 
+
+<img src="images/MASHDatabaseFieldMapping.png" alt="MASH Database Spreadsheet" width="699">
+
+The program will make random selections from each list and use those values complete the following template and predict the user's future.
+
+> Welcome **[name]**, this is your future...  
+> You will marry **[random from maleSpouseList or femaleSpouseList]** and live in a **[random from homeList]**. 
+> After **[random int]** years of marriage, you will finally get your dream job of being a **[random from occupationList]**. 
+> Your family will move to a **[random from homeList]** in **[random from hometownList]** where you will **[random from transportationList]** to work each day. 
+
+The program does not ask for a seed value simply because there is enough variablity in both the database CSV file as well as the order that the random calls are made to make an exact comparison pointless. I am providing expected output below with the understanding that the randomly selected value will be different each time the program is run. Once you have the base implementation working, you are welcome to create a custom version of the MASHDatabase.csv with your own theme.  :)
+
+#### Expected Program Output (with sample user input)
+```
+Please enter your name: Luke
+Please enter the filename: MASHDatabase.csv
+
+Welcome Luke, this is your future... 
+You will marry Barney and live in a shack. 
+After 7 years of marriage, you will finally get your dream job of being a teacher. 
+Your family will move to a apartment in The Bronx where you will walk to work each day. 
+
+```
+
+### Program Design
+Please copy LabUtility.java from the HousingCrunch activity into the MASHGame folder. In the main() method of MASHGame.java, begin by using the getName() and getFilename() static methods from the LabUtility class to prompt the use for the required information.  Then use the buildListFromCSV() static method to extract the cooresponding field for each list from the CSV file and create the cooresponding ArrayList as shown in the code below.
+
+```
+ArrayList<String> homeList = LabUtility.buildListFromCSV(filename,1);
+ArrayList<String> femaleSpouseList = LabUtility.buildListFromCSV(filename,2);
+ArrayList<String> maleSpouseList = LabUtility.buildListFromCSV(filename,3);
+ArrayList<String> occupationList = LabUtility.buildListFromCSV(filename,4);
+ArrayList<String> transportationList = LabUtility.buildListFromCSV(filename,5);
+ArrayList<String> hometownList = LabUtility.buildListFromCSV(filename,6);
+```
+
+Once the lists have been created and populated with data, use the technique demonstrated in the MagicEightBall example to make random selections from each list and sort the result to variables. Finally, use print statements and string concatenation to create the user's future.
+
+
+
 
 Write a program that simulates flipping a coin to make decisions. The input is how many decisions are needed, and the output is either "heads" (true) or "tails" (false). Assume the input is a value greater than 0. The behavior and expected output of this program (from the user's perspective) should be identical to that of Activity 1.
 
