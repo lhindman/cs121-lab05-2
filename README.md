@@ -17,7 +17,7 @@ Please enter a seed value: 123
 Please enter the filename: MASHDatabase.csv
 
 Hello Luke,
-You should buy a XXXXXXXXX
+You should buy a shack.
 ```
 
 #### Expected Program Output (with sample user input)
@@ -27,7 +27,21 @@ Please enter a seed value: 9853482
 Please enter the filename: MASHDatabase.csv
 
 Hello Luke,
-You should buy a XXXXXXXXX
+You should buy a hotel.
+```
+
+#### Expected Program Output (with sample user input)
+```
+Please enter your name: Luke
+Please enter a seed value: 123
+Please enter the filename: missing.csv
+Error: File does not exist.
+Please enter the filename: mashdatabase.csv
+Error: File does not exist.
+Please enter the filename: MASHDatabase.csv
+
+Hello Luke,
+You should buy a shack.
 ```
 
 ### Program Design
