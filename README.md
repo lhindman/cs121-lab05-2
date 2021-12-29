@@ -133,12 +133,12 @@ Your family will move to a apartment in The Bronx where you will walk to work ea
 Please copy LabUtility.java from the HousingCrunch activity into the MASHGame folder. In the main() method of MASHGame.java, begin by using the getName() and getFilename() static methods from the LabUtility class to prompt the use for the required information.  Then use the buildListFromCSV() static method to extract the cooresponding field for each list from the CSV file and create the cooresponding ArrayList as shown in the code below.
 
 ```
-ArrayList<String> homeList = LabUtility.buildListFromCSV(filename,1);
-ArrayList<String> femaleSpouseList = LabUtility.buildListFromCSV(filename,2);
-ArrayList<String> maleSpouseList = LabUtility.buildListFromCSV(filename,3);
-ArrayList<String> occupationList = LabUtility.buildListFromCSV(filename,4);
-ArrayList<String> transportationList = LabUtility.buildListFromCSV(filename,5);
-ArrayList<String> hometownList = LabUtility.buildListFromCSV(filename,6);
+ArrayList<String> homeList = LabUtility.buildListFromCSV(csvFile,1);
+ArrayList<String> femaleSpouseList = LabUtility.buildListFromCSV(csvFile,2);
+ArrayList<String> maleSpouseList = LabUtility.buildListFromCSV(csvFile,3);
+ArrayList<String> occupationList = LabUtility.buildListFromCSV(filencsvFileame,4);
+ArrayList<String> transportationList = LabUtility.buildListFromCSV(csvFile,5);
+ArrayList<String> hometownList = LabUtility.buildListFromCSV(csvFile,6);
 ```
 
 Once the lists have been created and populated with data, use the technique demonstrated in the MagicEightBall example to make random selections from each list and store the result to a variable. Finally, use print statements and string concatenation to create the user's future.
