@@ -70,7 +70,7 @@ The program will make random selections from each list and use those values comp
 > After **[random int]** years of marriage, you will finally get your dream job of being a **[random from occupationList]**. 
 > Your family will move to a **[random from homeList]** in **[random from hometownList]** where you will **[random from transportationList]** to work each day. 
 
-The program does not ask for a seed value simply because there is enough variablity in both the database CSV file as well as the order that the random calls are made to make an exact comparison pointless. I am providing expected output below with the understanding that the randomly selected value will be different each time the program is run. Once you have the base implementation working, you are welcome to create a custom version of the MASHDatabase.csv with your own theme.  :)
+The program does not ask for a seed value simply because there is enough variablity in both the database CSV file as well as the order that the random calls are made to make an exact comparison difficult. I am providing expected output below with the understanding that the randomly selected value will be different each time the program is run. Once you have the base implementation working, you are welcome to create a custom version of the MASHDatabase.csv with your own theme.  :)
 
 #### Expected Program Output (with sample user input)
 ```
