@@ -8,7 +8,7 @@ For this lab activity, the HousingCrunch activity in part 1 will be modified to 
 
 ***It will be extremely helpful to review the CSVParser Deeper Look Video and Guided Experimentation examples before starting on this activity.***
 
-NOTE:  In Computer Science we teach students to begin counting at zero because zero is the first index value of arrays, strings and many other programming related things.  When working with data from muggles (non-programmer folk), the first data element is often referred to as *record 1* or *row 1* or *column A* or *field 1*. Just open a spreadsheet and look at the column and row identifiers.  As programmers it is our responsibility to be aware of this difference and make certain our programbs behave accordingly.
+NOTE:  In Computer Science we teach students to begin counting at zero because zero is the first index value of arrays, strings and many other programming related things.  When working with data from muggles (non-programmer folk), the first data element is often referred to as *record 1* or *row 1* or *column A* or *field 1*. Just open a spreadsheet and look at the column and row identifiers.  As programmers it is our responsibility to be aware of this difference and make certain our programs behave correctly.
 
 #### Expected Program Output (with sample user input)
 ```
