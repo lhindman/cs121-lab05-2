@@ -53,10 +53,10 @@ public static File getFile(Scanner kbd) {...}
 public static ArrayList<String> buildListFromCSV(File database, int fieldNumber) {...}
 ```
 
-Once the above static methods have been successfully implemented, they can easily be integrated into HousingCrunch.java by first removing removing the hard-coded homeList and replacing it with the following method calls. Note that the number "1" in the call to buildListFromCSV() indicates that the list should be built from the first field in the CSV file.
+Once the above static methods have been successfully implemented, they can easily be integrated into HousingCrunch.java by first removing removing the hard-coded homeList and replacing it with the following method calls. Note that the number "1" in the call to buildListFromCSV() indicates that the homeList should be built from the first field in the CSV file.
 ```
-String filename = LabUtility.getFilename(kbd);
-ArrayList<String> homeList = LabUtility.buildListFromCSV(filename,1);
+File csvFile = LabUtility.getFile(kbd);
+ArrayList<String> homeList = LabUtility.buildListFromCSV(csvFile,1);
 ```
 
 ### Implementation Guide
