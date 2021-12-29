@@ -64,6 +64,25 @@ public static File getFile(Scanner kbd) {...}
 ``` 
 
 ```
+/**
+ * This method begins by creating a new ArrayList of Strings. It then 
+ *     attaches a Scanner to the provided File object and uses a while
+ *     loop to process the file line-by-line. For each line, this method creates
+ *     a new Scanner object with a comma "," delimiter to to enable access the
+ *     individual fields within the line using a second, inner while loop. As each
+ *     field is processed it is tracked using a counter variable starting with
+ *     field 1. If the current field is equal to the specified fieldNumber, the
+ *     String value of the field is added to the list.  Once all the lines in the 
+ *     file have been processed, the ArrayList is returned to the caller.
+ * 
+ * If Scanner throws a FileNotFoundException when instantiating the new file 
+ *     Scanner object, catch the expection, display an error message, and exit 
+ *     the program immediately with an exit status of 1.
+ * 
+ * @param csvFile File object that contains the CSV database to process
+ * @param fieldNumber Field number to use for building the list
+ * @return ArrayList of strings that represents the desired column of data from the database.
+ */
 public static ArrayList<String> buildListFromCSV(File database, int fieldNumber) {...}
 ```
 
