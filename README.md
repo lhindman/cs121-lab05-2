@@ -136,7 +136,7 @@ Please copy LabUtility.java from the HousingCrunch activity into the MASHGame fo
 ArrayList<String> homeList = LabUtility.buildListFromCSV(csvFile,1);
 ArrayList<String> femaleSpouseList = LabUtility.buildListFromCSV(csvFile,2);
 ArrayList<String> maleSpouseList = LabUtility.buildListFromCSV(csvFile,3);
-ArrayList<String> occupationList = LabUtility.buildListFromCSV(filencsvFileame,4);
+ArrayList<String> occupationList = LabUtility.buildListFromCSV(csvFile,4);
 ArrayList<String> transportationList = LabUtility.buildListFromCSV(csvFile,5);
 ArrayList<String> hometownList = LabUtility.buildListFromCSV(csvFile,6);
 ```
