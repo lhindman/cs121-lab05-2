@@ -31,14 +31,26 @@ You should buy a XXXXXXXXX
 ```
 
 ### Program Design
-Please copy LabUtility.java and HousingCrunch.java from the HousingCrunch activing in part 1 into the HousingCrunch folder.  This will allow reuse of both the getName() and getSeed() static methods and add a two additional static methods to our LabUtility class. Use the javadoc comments below to implement the expected functionality of each static method.
+Please copy LabUtility.java and HousingCrunch.java from the HousingCrunch activing in part 1 into the HousingCrunch folder.  This will allow reuse of both the getName() and getSeed() static methods. Use the javadoc comments below to implement two additional static methods in the LabUtility class.
 
 ```
-public static String getFilename(Scanner kbd) {...}
+/**
+ * Prompt the user to enter a filename then user the provided
+ *     Scanner object to read the entire line of user input as
+ *     a String value. Use this value to create a new File object
+ *     then use the exists() and isFile() methods to check that
+ *     the user specified file is valid.  If the file does not
+ *     exist or is not a file, display an error message and prompt
+ *     the user again. If the file is valid, return the File object
+ *     to the caller.
+ * @param kbd Scanner object bound to System.in
+ * @return Valid File object that represents the filename entered by the user.
+ */
+public static File getFile(Scanner kbd) {...}
 ``` 
 
 ```
-public static ArrayList<String> buildListFromCSV(String filename, int fieldNumber) {...}
+public static ArrayList<String> buildListFromCSV(File database, int fieldNumber) {...}
 ```
 
 Once the above static methods have been successfully implemented, they can easily be integrated into HousingCrunch.java by first removing removing the hard-coded homeList and replacing it with the following method calls. Note that the number "1" in the call to buildListFromCSV() indicates that the list should be built from the first field in the CSV file.
