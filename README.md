@@ -123,11 +123,22 @@ Please enter your name: Luke
 Please enter the filename: MASHDatabase.csv
 
 Welcome Luke, this is your future... 
-You will marry Barney and live in a shack. 
-After 7 years of marriage, you will finally get your dream job of being a teacher. 
-Your family will move to a apartment in The Bronx where you will walk to work each day. 
-
+You will marry Barney and live in a hostel.
+After 37 years of marriage, you will finally get your dream job of being a professor.
+Your family will move to a mansion in Queens where you will ride a bus to work each day.
 ```
+
+#### Expected Program Output (with sample user input)
+```
+Please enter your name: Luke
+Please enter the filename: MASHDatabase.csv
+
+Welcome Luke, this is your future... 
+You will marry Lily and live in a shack.
+After 33 years of marriage, you will finally get your dream job of being a newcaster.
+Your family will move to a hotel in Staten Island where you will carpool to work each day.
+```
+
 
 ### Program Design
 Please copy LabUtility.java from the HousingCrunch activity into the MASHGame folder. In the main() method of MASHGame.java, begin by using the getName() and getFilename() static methods from the LabUtility class to prompt the use for the required information.  Then use the buildListFromCSV() static method to extract the cooresponding field for each list from the CSV file and create the cooresponding ArrayList as shown in the code below.
