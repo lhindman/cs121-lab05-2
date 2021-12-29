@@ -4,19 +4,13 @@
 			"path": "LabGuide"
 		},
 		{
-			"path": "A1-CoinFlip"
+			"path": "HousingCrunch"
 		},
 		{
-			"path": "A2-CoinFlipV2"
+			"path": "MASHGame"
 		},
 		{
-			"path": "A3-CharacterCounter"
-		},
-		{
-			"path": "A4-MASHGame"
-		},
-		{
-			"path": "A5-Gradebook"
+			"path": "CodingJournal"
 		}
 	],
 	"settings": {
