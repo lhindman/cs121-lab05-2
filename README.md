@@ -104,11 +104,11 @@ ArrayList<String> homeList = LabUtility.buildListFromCSV(csvFile,1);
 
 M.A.S.H. is a text-based game that will predict your future!  M.A.S.H. is an abbreviation for potential future places of residence: Mansion, Apartment, Shack, House. :)
 
-Write a program that prompts the user for their name and the filename contain a CSV formatted database. The database is formatted as shown in the image below with field 1 cooresponding to the homeList, field 2 cooresponding to the femaleSpouseList and so on... with each column of data will be stored in a list. 
+Write a program that prompts the user for their name and the filename containing a CSV formatted database. The database is formatted as shown in the image below with field 1 cooresponding to the homeList, field 2 cooresponding to the femaleSpouseList and so on... 
 
 <img src="images/MASHDatabaseFieldMapping.png" alt="MASH Database Spreadsheet" width="699">
 
-The program will make random selections from each list and use those values complete the following template and predict the user's future.
+The program will make random selections from each list and use those values to complete the following template and predict the user's future.
 
 > Welcome **[name]**, this is your future...  
 > You will marry **[random from maleSpouseList or femaleSpouseList]** and live in a **[random from homeList]**. 
@@ -128,20 +128,8 @@ After 37 years of marriage, you will finally get your dream job of being a profe
 Your family will move to a mansion in Queens where you will ride a bus to work each day.
 ```
 
-#### Expected Program Output (with sample user input)
-```
-Please enter your name: Luke
-Please enter the filename: MASHDatabase.csv
-
-Welcome Luke, this is your future... 
-You will marry Lily and live in a shack.
-After 33 years of marriage, you will finally get your dream job of being a newcaster.
-Your family will move to a hotel in Staten Island where you will carpool to work each day.
-```
-
-
 ### Program Design
-Please copy LabUtility.java from the HousingCrunch activity into the MASHGame folder. In the main() method of MASHGame.java, begin by using the getName() and getFilename() static methods from the LabUtility class to prompt the use for the required information.  Then use the buildListFromCSV() static method to extract the cooresponding field for each list from the CSV file and create the cooresponding ArrayList as shown in the code below.
+Please copy LabUtility.java from the HousingCrunch activity into the MASHGame folder. In the main() method of MASHGame.java, begin by using the getName() and getFilename() static methods from the LabUtility class to prompt the user for the required information.  Then use the buildListFromCSV() static method to extract the cooresponding field for each list from the CSV file and create the cooresponding ArrayList as shown in the code below.
 
 ```
 ArrayList<String> homeList = LabUtility.buildListFromCSV(csvFile,1);
@@ -152,13 +140,13 @@ ArrayList<String> transportationList = LabUtility.buildListFromCSV(csvFile,5);
 ArrayList<String> hometownList = LabUtility.buildListFromCSV(csvFile,6);
 ```
 
-Once the lists have been created and populated with data, use the technique demonstrated in the MagicEightBall example to make random selections from each list and store the result to a variable. Finally, use print statements and string concatenation to create the user's future.
+Once the lists have been created and populated with data, use the technique demonstrated in the MagicEightBall example (as well as the HousingCrunch activity) to make random selections from each list and store the result to a variable. Finally, use print statements and string concatenation to create the user's future.
 
 
 ### Implementation Guide
 1. Expand the folder named MASHGame, copy LabUtility.java from HousingCrunch and open MashGame.java
 2. Design a program to satisfy the requirements in the Problem Description and Program Design sections
-3. Design a program to satisfy the requirements in the Problem Description and Program Design sections
+3. Test the program using the sample user input and compare against the expected output.
 4. Commit the changes to your local repository with a message stating that Lab Activity 3 is completed.
 5. Push the changes from your local repository to the github classroom repository.
 
