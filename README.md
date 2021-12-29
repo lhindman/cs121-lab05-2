@@ -71,7 +71,7 @@ public static File getFile(Scanner kbd) {...}
  *     a new Scanner object with a comma "," delimiter to to enable access the
  *     individual fields within the line using a second, inner while loop. As each
  *     field is processed it is tracked using a counter variable starting with
- *     field 1. If the current field is equal to the specified fieldNumber, the
+ *     field 1. If the current field is equal to the specified fieldFilter, the
  *     String value of the field is added to the list.  Once all the lines in the 
  *     file have been processed, the ArrayList is returned to the caller.
  * 
@@ -80,10 +80,10 @@ public static File getFile(Scanner kbd) {...}
  *     the program immediately with an exit status of 1.
  * 
  * @param csvFile File object that contains the CSV database to process
- * @param fieldNumber Field number to use for building the list
+ * @param fieldFilter Field number to use for building the list
  * @return ArrayList of strings that represents the desired column of data from the database.
  */
-public static ArrayList<String> buildListFromCSV(File database, int fieldNumber) {...}
+public static ArrayList<String> buildListFromCSV(File database, int fieldFilter) {...}
 ```
 
 Once the above static methods have been successfully implemented, they can easily be integrated into HousingCrunch.java by first removing removing the hard-coded homeList and replacing it with the following method calls. Note that the number "1" in the call to buildListFromCSV() indicates that the homeList should be built from the first field in the CSV file.
