@@ -106,7 +106,7 @@ M.A.S.H. is a text-based game that will predict your future!  M.A.S.H. is an abb
 
 Write a program that prompts the user for their name and the filename containing a CSV formatted database. The database is formatted as shown in the image below with field 1 cooresponding to the homeList, field 2 cooresponding to the femaleSpouseList and so on... 
 
-<img src="images/MASHDatabaseFieldMapping.png" alt="MASH Database Spreadsheet" width="699">
+<img src="images/MASHDatabaseFieldMapping.png" alt="MASH Database Field Mappings" width="699">
 
 The program will make random selections from each list and use those values to complete the following template and predict the user's future.
 
