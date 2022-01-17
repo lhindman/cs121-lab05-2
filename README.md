@@ -1,6 +1,6 @@
 # Module 5 Lab Guide (part 2)
 
-## Lab Activity 2 - HousingCrunch (Required)
+## Lab Activity 2 - HousingCrunch
 ### Problem Description
 For this lab activity, the HousingCrunch activity in part 1 will be modified to load housing data from a CSV file instead of having the options manually added to the houseList (also known has hardcoded values). In addition to prompting the user for name and a seed value, the program should also prompt for the filename containing the housing data. The data file will contain more data fields than will be used in this application as we are only interested in the housing data stored in the 1st field. The screenshot below shows a spreadsheet view of the provided CSV data with the first field of each row outlined in red.
 
@@ -99,7 +99,7 @@ ArrayList<String> homeList = LabUtility.buildListFromCSV(csvFile,1);
 4. Commit the changes to your local repository with a message stating that Lab Activity 2 is completed.
 5. Push the changes from your local repository to the github classroom repository.
 
-## Lab Activity 3 - MASHGame (Required)
+## Lab Activity 3 - MASHGame
 ### Problem Description
 
 M.A.S.H. is a text-based game that will predict your future!  M.A.S.H. is an abbreviation for potential future places of residence: Mansion, Apartment, Shack, House. :)
@@ -149,15 +149,3 @@ Once the lists have been created and populated with data, use the technique demo
 3. Test the program using the sample user input and compare against the expected output.
 4. Commit the changes to your local repository with a message stating that Lab Activity 3 is completed.
 5. Push the changes from your local repository to the github classroom repository.
-
-## Coding Journal (Optional)
-Keep a journal of your activities as you work on this lab. Many of the best engineers that I have worked with professionally have kept some sort of engineering journal. I personally packed notebooks around with me for nearly 8 years before I began keeping my notes electronically.   
-
-Your journal can track ideas, bugs, cool links, code snippets, shell commands, rants, or simply a reflection on what worked well or not-so-well with this lab activity. I will not be grading the content of your journal, but I will expect at least two timestamped journal entries of at least a 75 to 150 words each added to the provided Journal.md file.  The purpose of this component is to help develop the habit of taking notes and creating documentation while you code. The more detail you provide the better as that will help you if you ever need to refer back to this project in the future.
-
-## Markdown Resources
-Markdown is a notation that is used to format text documents.  It is widely used in Software Development shops around the world, which is why we're asking you to use it in your lab documentation.  
-
-Github provides a guide for getting started:  [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
-
