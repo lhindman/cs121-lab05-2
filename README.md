@@ -1,6 +1,9 @@
 ![CS121 Banner](images/CS121-BANNER.svg)
 # Module 5 Lab Guide (part 2)
 [Lab Introduction Video](https://boisestate.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c9c82f67-a289-4faf-8522-ae2801867bbe&start=0)
+
+**NOTE: Please remember to [open the workspace](images/open-lab-workspace.png) before beginning on the lab activities** 
+
 ## Lab Activity 2 - HousingCrunch
 ### Problem Description
 For this lab activity, the HousingCrunch activity in part 1 will be modified to load housing data from a CSV file instead of having the options manually added to the houseList (also known has hardcoded values). In addition to prompting the user for name and a seed value, the program should also prompt for the filename containing the housing data. The data file will contain more data fields than will be used in this application as we are only interested in the housing data stored in the 1st field of each row. The screenshot below shows a spreadsheet view of the provided CSV data with the first field of each row outlined in red.
